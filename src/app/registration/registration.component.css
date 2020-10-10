@@ -1,0 +1,13 @@
+:host{
+  text-align: center;
+}
+
+#regForm{
+  text-align: center;
+  display: block;
+}
+
+#regForm div{
+  margin-bottom: 20px;
+}
+

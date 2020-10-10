@@ -1,0 +1,26 @@
+footer{
+  background-color: blueviolet;
+  padding: 15px;
+  justify-content: center;
+  width: 50%;
+  position: absolute;
+  right: 25%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: table-cell;
+  text-align: center;
+}
+
+a:hover{
+  background-color: darkmagenta;
+}
+
+nav{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
