@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor() { }
+  roles: Array<string>;
+
+  constructor() {
+    this.roles = ["Actor", "Project Manager", "Crew", "Admin"];
+   }
 
   ngOnInit(): void {
   }
