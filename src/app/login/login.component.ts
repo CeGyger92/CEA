@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-
+  allowLogin = false;
   ngOnInit(): void {
   }
 
+  loginFunction(): void{
+
+  }
+
 }
+
+
+
+
