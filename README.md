@@ -5,7 +5,7 @@ First install the Angular CLI and Node JS as detailed here (https://angular.io/g
 
 Then clone the Github repository by copying the following link (https://github.com/CeGyger92/CEA.git) and then using it in either Github Desktop or Github command line as described here (https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
-Once you have the repo cloned launch the commandline and navigate to the CEA directory. Issue the command ng serve to preview the current build at localhost:2400.
+Once you have the repo cloned launch the commandline and navigate to the CEA directory. Issue the command ng serve to preview the current build at localhost:4200.
 
 For contributors, before begining to edit the code make sure you have the latest build by issuing a pull request as detailed here(https://docs.github.com/en/free-pro-team@latest/github/using-git/getting-changes-from-a-remote-repository).
 
