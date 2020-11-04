@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Production } from '../production';
 
 @Component({
   selector: 'app-productions',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ProductionsComponent implements OnInit {
- results: string[];
+ results: Production[];
+
   constructor() {
-    this.results = ["Result1", "Result2", "Result3", "Results4"];
+    const resultCreator = new Production();
+
+    const result = resultCreator.create({
+      name: 'Hamilton',
+      date: 'yyyy/MM/dd',
+      desc: 'Description for the event',
+      imgPath: 'assets/placeholder.png'
+    });
+
   }
 
   ngOnInit(): void {
