@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ShowOnDirtyErrorStateMatcher } from '@angular/material/core';
 import { Production } from '../production';
+import {LoginComponent} from '../login/login.component';
+import {RESULTS} from '../mock-results';
+
 
 @Component({
   selector: 'app-productions',
@@ -8,18 +12,10 @@ import { Production } from '../production';
 })
 
 export class ProductionsComponent implements OnInit {
- results: Production[];
+ results = RESULTS;
+ isAdmin = true;
 
   constructor() {
-    const resultCreator = new Production();
-
-    const result = resultCreator.create({
-      name: 'Hamilton',
-      date: 'yyyy/MM/dd',
-      desc: 'Description for the event',
-      imgPath: 'assets/placeholder.png'
-    });
-
   }
 
   ngOnInit(): void {

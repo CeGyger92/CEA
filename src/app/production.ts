@@ -1,5 +1,13 @@
 export class Production {
-  create(event: { name: string; date: string; desc:string;  imgPath:string;}) {
-    return { name: event.name, date:event.date, desc:event.desc, imgPath: event.imgPath };
+  public name : string;
+  public date : string;
+  public desc : string;
+  public img : string;
+
+  constructor(name, date, desc, img){
+    this.name = name;
+    this.date = date;
+    this.desc = desc;
+    this.img = img;
   }
 }

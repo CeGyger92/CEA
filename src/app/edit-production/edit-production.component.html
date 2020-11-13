@@ -1,0 +1,37 @@
+<ng-template [ngIf]="!isEdit"><h1>Add Production</h1></ng-template>
+<ng-template [ngIf]="isEdit"><h1>Edit Production</h1></ng-template>
+<div id="form">
+  <label>Production Name:</label><br>
+  <input type="text" placeholder="Title"><br>
+  <label>Date:</label><br>
+  <input type="date"><br>
+  <label>Description:</label><br>
+  <textarea rows="5" cols="30"></textarea><br>
+  <label>Roles Needed:</label><br>
+  <select>
+    <option>Actor</option>
+    <option>Producer</option>
+    <option>Director</option>
+    <option>Makeup</option>
+    <option>Camera</option>
+    <option>Set Designer</option>
+  </select>&nbsp;&nbsp;
+  <span>Qty:</span><input type="text" style="width: 10px;">&nbsp;&nbsp;<button>+</button>
+  <div>
+    <button style="margin: 5px;">x Actor</button>
+    <button style="margin: 5px;">x Director</button>
+    <br>
+    <button style="margin: 5px;">x Producer</button>
+    <button style="margin: 5px;">x Camera</button>
+    <br>
+    <button style="margin: 5px;">x Makeup</button>
+    <button style="margin: 5px;">x Set Designer</button>
+    <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+    <button style="width: 75%; height:20px;" onclick="alert('Published Production')">Publish</button>
+  </div>
+</div>
