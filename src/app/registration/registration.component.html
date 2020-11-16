@@ -2,12 +2,12 @@
 <br>
 <div id=regForm>
   <label>Email:</label>
-  <div><input type="text" placeholder="example@mail.com"></div>
+  <div [formGroup]="RegistrationInfo"><input type="text" placeholder="example@mail.com" class="form-control" formControlName="Email"></div>
   <label>Password:</label>
-  <div><input type="text" placeholder="Password"></div>
-  <div><input type="text" placeholder="Confirm Password"></div>
+  <div [formGroup]="RegistrationInfo"><input type="text" placeholder="Password" class="form-control" formControlName="Password"></div>
+  <div [formGroup]="RegistrationInfo"><input type="text" placeholder="Confirm Password" class="form-control" formControlName="Password2"></div>
   <label>Primary Role</label>
-  <div><select name = "Roles" >
+  <div [formGroup]="RegistrationInfo"><select name = "Roles" class="form-control" formControlName="Role">
           <option value={{roles[0]}}>{{roles[0]}}</option>
           <option value={{roles[1]}}>{{roles[1]}}</option>
           <option value={{roles[2]}}>{{roles[2]}}</option>
@@ -17,10 +17,13 @@
   <label>Upload Profile Picture</label>
   <div><button  style="margin-top: 20px;">Browse from local PC</button></div>
   <label>Skills</label>
-  <div><input type="text" placeholder="Start typing a skill"></div>
+  <div [formGroup]="RegistrationInfo"><input type="text" placeholder="Start typing a skill" class="form-control" formControlName="Skills"></div>
   <label>Experience</label>
-  <div><input type="text" placeholder="Type Production"></div>
+  <div [formGroup]="RegistrationInfo"><input type="text" placeholder="Type Production" class="form-control" formControlName="Experience"></div>
   <div><button>Add Production</button></div>
   <label for="">Previous Roles</label>
   <div><input type="text" placeholder="Start typing"></div>
+  <p *ngIf="inputIncorrect">Not all fields are complete.</p>
+  <div><button class="btn btn-primary" (click)="register()" style="margin-top: 20px;">Login</button></div>
+
 </div>

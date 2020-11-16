@@ -1,12 +1,11 @@
 <div><img src="../../assets/profile.png" alt="Profile Picture" width="200px" height="200px"></div>
 <h1>Login</h1>
 <div id=regForm>
-  <div><input (change)="loginFunction()" type="text" placeholder="Username"></div>
-  <div><input type="text" placeholder="Password"></div>
+  <div [formGroup]="LoginInfo"><input type="text" placeholder="Username" class="form-control" formControlName="Username"></div>
+  <div [formGroup]="LoginInfo"><input type="text" placeholder="Password" class="form-control" formControlName="Password"></div>
   <div><input type="checkbox" name="StayLoggedIn" id="SLI">Stay Logged In?</div>
-  <div><button class="btn btn-primary" [disabled]="!allowLogin" style="margin-top: 20px;">Login</button></div>
+  <div><button class="btn btn-primary" (click)="loginFunction()" style="margin-top: 20px;">Login</button></div>
   <div><a routerLink= "/forgotpassword">Forgot Password?</a></div>
   <div><a routerLink= "/registration">Register Now</a></div>
 </div>
-
 

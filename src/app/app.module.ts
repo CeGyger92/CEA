@@ -12,6 +12,7 @@ import { ForgotpasswordNewPasswordComponent } from './forgotpassword-new-passwor
 import { ProductionsComponent } from './productions/productions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -38,6 +39,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     MatIconModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
