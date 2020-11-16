@@ -1,15 +1,23 @@
 <h1>Productions</h1>
 <div id="search">
   <input type="text" placeholder="Search">
-  <label>Filter</label><select>
+  <div><label>Filter</label><select>
     <option>Date</option>
     <option>Name</option>
     <option>Open Roles</option>
   </select>
 </div>
+</div>
+<ng-template [ngIf]="isAdmin"><div><a routerLink="/myProductions"><button>My Productions</button></a></div></ng-template>
 <h2>Results</h2>
 <div class="results" >
-  <ul>
-    <li *ngFor="let result of results">{{result}}</li>
-  </ul>
+    <div *ngFor="let result of results"><a routerLink="/productionDetails">
+      <u><h3 id="upperLabel">{{result.name}}</h3></u>
+      <div style="width: 75%; position: relative; left:12.5%">
+      <span><em>{{result.date}}</em></span>
+      </div>
+      <img [src]="result.img" width="75%">
+      </a>
+    </div>
 </div>
+<div style="width:100%; height:90px;"></div>

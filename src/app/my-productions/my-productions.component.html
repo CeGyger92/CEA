@@ -1,0 +1,27 @@
+<h1>Productions</h1>
+<div id="search">
+  <input type="text" placeholder="Search">
+  <div><label>Filter</label><select>
+    <option>Date</option>
+    <option>Name</option>
+    <option>Open Roles</option>
+  </select>
+</div>
+</div>
+<div><a routerLink="/editProduction"><button>Add Productions</button></a></div>
+<h2>My Productions</h2>
+<div class="results" >
+  <div *ngFor="let result of results"><a routerLink="/editProduction">
+    <u><h3 id="upperLabel">{{result.name}}</h3></u>
+    <div style="width: 75%; position: relative; left:12.5%">
+    <span><em>{{result.date}}</em></span>
+    </div>
+    <img [src]="result.img" width="75%">
+    </a>
+  </div>
+</div>
+<div>
+  <a routerLink="/userSearch"><button style="width: 75%; height:20px;">Fill Roles</button></a>
+</div>
+<div style="width:100%; height:90px;"></div>
+

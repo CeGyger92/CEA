@@ -22,3 +22,7 @@ a{
   color: black;
   text-decoration: none;
 }
+.searchResult{
+  width: 75%; height: 50px; position: relative; left:12.5%;
+  background: blueviolet;
+}

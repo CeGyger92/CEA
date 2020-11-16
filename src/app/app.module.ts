@@ -13,6 +13,11 @@ import { ProductionsComponent } from './productions/productions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductionDetailsComponent } from './production-details/production-details.component';
+import { UserSearchComponent } from './user-search/user-search.component';
+import { EditProductionComponent } from './edit-production/edit-production.component';
+import { MyProductionsComponent } from './my-productions/my-productions.component';
+import { RoleDetailsComponent } from './role-details/role-details.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -20,7 +25,12 @@ const routes: Routes = [
   {path: 'forgotpassword', component: ForgotPasswordComponent},
   {path: 'forgotpasswordcode', component: ForgotPasswordCodeComponent},
   {path: 'forgotpasswordNewPassword', component: ForgotpasswordNewPasswordComponent},
-  {path: 'productions', component: ProductionsComponent}
+  {path: 'productions', component: ProductionsComponent},
+  {path: 'productionDetails', component: ProductionDetailsComponent},
+  {path: 'roleDetails', component: RoleDetailsComponent},
+  {path: 'userSearch', component: UserSearchComponent},
+  {path: 'editProduction', component: EditProductionComponent},
+  {path: 'myProductions', component: MyProductionsComponent}
 ];
 
 @NgModule({
@@ -32,7 +42,12 @@ const routes: Routes = [
     ForgotPasswordComponent,
     ForgotPasswordCodeComponent,
     ForgotpasswordNewPasswordComponent,
-    ProductionsComponent
+    ProductionsComponent,
+    ProductionDetailsComponent,
+    UserSearchComponent,
+    EditProductionComponent,
+    MyProductionsComponent,
+    RoleDetailsComponent
   ],
   imports: [
     BrowserModule,
