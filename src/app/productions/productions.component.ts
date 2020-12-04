@@ -14,6 +14,7 @@ import {RESULTS} from '../mock-results';
 export class ProductionsComponent implements OnInit {
  results = RESULTS;
  isAdmin = true;
+ selected = 1;
 
   constructor() {
   }
