@@ -25,10 +25,14 @@ export class RegistrationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  createProfile(): void{
+
+  }
 
   register(): void{
     if(this.RegistrationInfo.get('Email').valid && (this.RegistrationInfo.get('Password').value == this.RegistrationInfo.get('Password2').value) && this.RegistrationInfo.get('Password').touched && this.RegistrationInfo.get('Password2').touched && this.RegistrationInfo.get('Role').touched && this.RegistrationInfo.get('Skills').touched && this.RegistrationInfo.get('Experience').touched ){
       const navigationDetails: string[] = ['/'];
+      this.createProfile();
       this.router.navigate(navigationDetails);
     }
     else{

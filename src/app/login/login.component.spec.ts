@@ -26,12 +26,4 @@ describe('LoginComponent', () => {
 
 
 
-  setTimeout(() => {
-    //if(login and password are filled allow event)
-    //else(do nothing)
-
-    allowNewEvent = true;
-    }, 2000);
-    }
-
 });

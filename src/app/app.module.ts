@@ -18,6 +18,7 @@ import { UserSearchComponent } from './user-search/user-search.component';
 import { EditProductionComponent } from './edit-production/edit-production.component';
 import { MyProductionsComponent } from './my-productions/my-productions.component';
 import { RoleDetailsComponent } from './role-details/role-details.component';
+import { ProfilePagesComponent } from './profile-pages/profile-pages.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -30,7 +31,8 @@ const routes: Routes = [
   {path: 'roleDetails', component: RoleDetailsComponent},
   {path: 'userSearch', component: UserSearchComponent},
   {path: 'editProduction', component: EditProductionComponent},
-  {path: 'myProductions', component: MyProductionsComponent}
+  {path: 'myProductions', component: MyProductionsComponent},
+  {path: 'profilePage', component: ProfilePagesComponent}
 ];
 
 @NgModule({
@@ -47,7 +49,8 @@ const routes: Routes = [
     UserSearchComponent,
     EditProductionComponent,
     MyProductionsComponent,
-    RoleDetailsComponent
+    RoleDetailsComponent,
+    ProfilePagesComponent
   ],
   imports: [
     BrowserModule,
